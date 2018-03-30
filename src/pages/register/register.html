@@ -1,0 +1,134 @@
+<!-- -->
+
+
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Sign Up
+    </ion-title>
+  
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="animated fadeIn login auth-page">
+<div class="login-content">
+
+  <!-- Logo -->
+  <div padding-horizontal text-center class="animated fadeInDown">
+    <div class="logo"></div>
+    
+  </div>
+ 
+
+ 
+ 
+
+<ion-item >
+    <ion-label floating> Your Name</ion-label>
+  <ion-input type="text" [(ngModel)]="name"></ion-input>
+</ion-item>
+
+
+<ion-item >
+  <ion-label floating>ID Number</ion-label>
+  <ion-input type="number" [(ngModel)]="identifierNum"></ion-input>
+</ion-item>
+
+
+<ion-item >
+  <ion-label floating>Email</ion-label>
+  <ion-input type="email" #username [(ngModel)]="mail"></ion-input>
+</ion-item>
+ 
+
+
+ <ion-item >
+   <ion-label floating>
+    <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+  Password
+</ion-label>
+  <ion-input  type="password" #password [(ngModel)]="pas"></ion-input>
+</ion-item>
+      
+  
+<ion-item><h1>
+    
+      Driving lisence Barcode : {{datay.text}}
+    
+</h1> 
+</ion-item>
+  
+
+      <ion-card class="full-width" no-margin margin-bottom>
+        <ion-card-content no-padding>
+    
+          <ion-item>
+            <ion-label class="text-1x bold">Status?</ion-label>
+            <ion-select [(ngModel)]="status" (ionChange)="getStatus(status)">
+            <ion-option [value]="yes">I have a driving Lisence</ion-option>
+            <ion-option [value]="no">I don't have a driving Lisence</ion-option>
+           
+          
+          </ion-select>
+          </ion-item>
+    
+        </ion-card-content>
+      </ion-card>
+      
+
+
+ <div text-center margin-top>
+     
+    <button ion-button icon-start block color="dark" tappable (click)="scany(); goLogy()" >
+        <ion-icon name="barcode"></ion-icon>
+        Scan your Driving lisence Barcode
+      </button>
+      <!-- <button ion-button (click)="scany(); goLogy()">Scan</button> -->
+
+
+
+
+ 
+
+
+
+          <button ion-button block color="dark" tappable (click)="newUser(); createPerson(name,identifierNum,mail,pas,status,datay.text)">
+               <ion-icon name="ios-add-circle"></ion-icon>
+                Sign Up
+               </button>
+             
+    <span ion-text color="primary" tappable (click)="login()">I have an account</span>
+  </div>
+
+  <div margin-top>
+    
+
+    <p text-center ion-text color="secondary">Or Sign Up with:</p>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <button ion-button icon-only block class="btn-facebook">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button icon-only block class="btn-twitter">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button icon-only block class="btn-gplus">
+            <ion-icon name="logo-googleplus"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- Other links -->
+  
+
+</div>
+</ion-content>
