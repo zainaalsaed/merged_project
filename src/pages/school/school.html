@@ -21,7 +21,7 @@
   </div>
 
   <ion-list>
-      <ion-item *ngFor="let item of items" class="spinner-container" tappable (click)="reg($event,item)">
+      <ion-item *ngFor="let item of items" class="spinner-container" tappable (click)="reg(item)">
         {{item.title}}
       </ion-item>
   </ion-list>

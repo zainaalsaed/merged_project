@@ -66,7 +66,7 @@ setFilteredItems() {
 searchBoxValue="";
 
 reg(event,item) { 
-  if ( this.item=='Nablus')
+  if ( item.title=='Nablus')
   {this.nav.push(JerichoschoolsPage);}
  
 }
