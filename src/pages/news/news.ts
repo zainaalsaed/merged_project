@@ -58,7 +58,12 @@ export class NewsPage {
   }
   
   showComp(){
-    this.navCtrl.setRoot(RegscPage);
+    this.navCtrl.setRoot(LocalWeatherPage);
+  }
+  Weat(){
+
+this.navCtrl.push(LocalWeatherPage);
+
   }
 
   
