@@ -12,6 +12,7 @@ import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import { StartPage } from "../pages/start/start";
 import { LoginPage } from "../pages/login/login";
 import { NewsPage } from "../pages/news/news";
+import { ProfilePage } from "../pages/profile/profile";
 
 export interface MenuItem {
     title: string;
@@ -40,7 +41,9 @@ export class MyApp {
 
     this.appMenuItems = [
       {title: 'Home', component: HomePage, icon: 'home'},
-      {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'}
+      {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'},
+      {title: 'News Feed ', component :NewsPage, icon: 'apps'},
+      {title: 'Edit Your Info!', component: ProfilePage, icon:'people'}
     ];
   }
 
@@ -71,4 +74,7 @@ export class MyApp {
     this.nav.setRoot(NewsPage);
   }
 
+
+
+  
 }
