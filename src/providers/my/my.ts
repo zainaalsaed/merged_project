@@ -11,10 +11,10 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class MyProvider {
-  items: any;
+  items: any=[];
   constructor(public http: Http) {
     this.items = [
-      {title: 'Nablus'},
+      {title: 'Nablus' , id:0},
       {title: 'Ramallah'},
       {title: 'Tulkarm'},
       {title: 'Jenin'},
@@ -27,6 +27,8 @@ export class MyProvider {
   
 
 }
+
+
 
 filterItems(searchTerm){
 

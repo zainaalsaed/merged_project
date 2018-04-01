@@ -42,6 +42,8 @@ import { JerichoschoolsPage } from "../pages/jerichoschools/jerichoschools";
 import { ScanRegisterPage } from "../pages/scan-register/scan-register";
 import { ScanPage } from "../pages/scan/scan";
 import { RegscPage } from "../pages/regsc/regsc";
+import { DriverPage } from "../pages/driver/driver";
+import { ProfilePage } from "../pages/profile/profile";
 
 
 
@@ -87,7 +89,9 @@ const firebaseAuth = {
     ScanPage,
     RegscPage,
     ScanRegisterPage,
-    NewsPage
+    NewsPage,
+    ProfilePage,
+    DriverPage
   ],
   imports: [
     HttpModule,
@@ -132,7 +136,9 @@ const firebaseAuth = {
     ScanPage,
     RegscPage,
     ScanRegisterPage,
-    NewsPage
+    NewsPage,
+    DriverPage,
+    ProfilePage
   ],
   providers: [
     BarcodeScanner,

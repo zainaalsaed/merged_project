@@ -26,13 +26,15 @@ import { JerichoschoolsPage } from "../jerichoschools/jerichoschools";
 @Component({
   selector: 'page-school',
   templateUrl: 'school.html',
+  providers: [MyProvider]
 })
 export class SchoolPage {
-  item:string;
+  itemz: string;
+  item:any;
   nav: any;
   searchTerm: string = '';
     searchControl: FormControl;
-    items: any;
+    items: any=[];
     searching: any = false;
  
 
@@ -40,7 +42,10 @@ export class SchoolPage {
     this.searchControl = new FormControl();
     this.item=navParams.get('data');
   }
+  
 
+
+  
   ionViewDidLoad() {
     this.setFilteredItems();
  
@@ -65,8 +70,9 @@ setFilteredItems() {
 }
 searchBoxValue="";
 
-reg(event,item) { 
-  if ( item.title=='Nablus')
+reg($event,item) { 
+
+  if ( item.id==0)
   {this.nav.push(JerichoschoolsPage);}
  
 }
