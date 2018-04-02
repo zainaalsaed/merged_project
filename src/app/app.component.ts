@@ -52,7 +52,7 @@ export class MyApp {
       // Okay, so the platform is ready and our plugins are available.
 
       //*** Control Splash Screen
-      // this.splashScreen.show();
+       //this.splashScreen.show();
       // this.splashScreen.hide();
 
       //*** Control Status Bar

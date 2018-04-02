@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the QalqilyaschoolsPage page.
+ * Generated class for the qalqilyaschoolsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,13 +13,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-qalqilyaschools',
   templateUrl: 'qalqilyaschools.html',
 })
-export class QalqilyaschoolsPage {
+export class qalqilyaschoolsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad QalqilyaschoolsPage');
+    console.log('ionViewDidLoad qalqilyaschoolsPage');
   }
 
 }

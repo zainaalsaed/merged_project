@@ -17,9 +17,9 @@ export class MyProvider {
       {title: 'Nablus' , id:0},
       {title: 'Ramallah'},
       {title: 'Tulkarm'},
-      {title: 'Jenin'},
-      {title: 'Qalqilya'},
-      {title: 'Jerusalem'},
+      {title: 'jenin'},
+      {title: 'qalqilya'},
+      {title: 'jerusalem'},
       {title: 'Hebron'},
       {title: 'Bethlehem'},
       {title: 'Jericho'}
