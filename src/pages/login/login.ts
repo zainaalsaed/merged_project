@@ -9,6 +9,7 @@ import { FirebaseError } from '@firebase/util';
 import { BarcodeScanner,BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
 import { User } from '@firebase/auth-types';
 import { ScanPage } from "../scan/scan";
+import { DriverPage } from "../driver/driver";
 
 
 @Component({
@@ -61,7 +62,7 @@ encodedData:{};
     .then( data => {
       console.log('got some data', this.fire.auth.currentUser);
       this.alert('Success! You\'re logged in');
-      this.navCtrl.setRoot(HomePage);
+      this.navCtrl.setRoot(DriverPage);
       // user is logged in
     })
     .catch( error => {

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the JerusalemschoolsPage page.
+ * Generated class for the jerusalemschoolsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,13 +13,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-jerusalemschools',
   templateUrl: 'jerusalemschools.html',
 })
-export class JerusalemschoolsPage {
+export class jerusalemschoolsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad JerusalemschoolsPage');
+    console.log('ionViewDidLoad jerusalemschoolsPage');
   }
 
 }

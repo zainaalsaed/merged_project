@@ -5,11 +5,11 @@ import { MyProvider } from '../../providers/my/my';
 import 'rxjs/add/operator/debounceTime';
 import { FormControl } from '@angular/forms';
 import {RegisterPage} from "../register/register";
-import { JeninschoolsPage } from "../Jeninschools/Jeninschools";
-import { JerusalemschoolsPage } from "../Jerusalemschools/Jerusalemschools";
-import { QalqilyaschoolsPage } from "../Qalqilyaschools/Qalqilyaschools";
-import { TulkarmschoolsPage } from "../Tulkarmschools/Tulkarmschools";
-import { RamallahschoolsPage } from "../Ramallahschools/Ramallahschools";
+import { jeninschoolsPage } from "../jeninschools/jeninschools";
+import { jerusalemschoolsPage } from "../jerusalemschools/jerusalemschools";
+import { qalqilyaschoolsPage } from "../qalqilyaschools/qalqilyaschools";
+import { tulkarmschoolsPage } from "../tulkarmschools/tulkarmschools";
+import { ramallahschoolsPage } from "../ramallahschools/ramallahschools";
 import { NablusschoolsPage } from '../nablusschools/nablusschools';
 import { HebronschoolsPage } from "../hebronschools/hebronschools";
 import { BethlehemschoolsPage } from "../bethlehemschools/bethlehemschools";
@@ -26,13 +26,15 @@ import { JerichoschoolsPage } from "../jerichoschools/jerichoschools";
 @Component({
   selector: 'page-school',
   templateUrl: 'school.html',
+  providers: [MyProvider]
 })
 export class SchoolPage {
-  item:string;
+  itemz: string;
+  item:any;
   nav: any;
   searchTerm: string = '';
     searchControl: FormControl;
-    items: any;
+    items: any=[];
     searching: any = false;
  
 
@@ -40,7 +42,10 @@ export class SchoolPage {
     this.searchControl = new FormControl();
     this.item=navParams.get('data');
   }
+  
 
+
+  
   ionViewDidLoad() {
     this.setFilteredItems();
  
@@ -65,8 +70,9 @@ setFilteredItems() {
 }
 searchBoxValue="";
 
-reg(event,item) { 
-  if ( item.title=='Nablus')
+reg($event,item) { 
+
+  if ( item.id==0)
   {this.nav.push(JerichoschoolsPage);}
  
 }

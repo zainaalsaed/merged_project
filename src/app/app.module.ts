@@ -31,18 +31,23 @@ import { MyProvider } from '../providers/my/my';
 import { SchoolPage } from "../pages/school/school";
 import { HttpModule } from '@angular/http';
 import { NablusschoolsPage } from "../pages/nablusschools/nablusschools";
-import { JeninschoolsPage } from "../pages/Jeninschools/Jeninschools";
-import { JerusalemschoolsPage } from "../pages/Jerusalemschools/Jerusalemschools";
-import { QalqilyaschoolsPage } from "../pages/Qalqilyaschools/Qalqilyaschools";
-import { TulkarmschoolsPage } from "../pages/Tulkarmschools/Tulkarmschools";
-import { RamallahschoolsPage } from "../pages/Ramallahschools/Ramallahschools";
+import { jeninschoolsPage } from "../pages/jeninschools/jeninschools";
+import { jerusalemschoolsPage } from "../pages/jerusalemschools/jerusalemschools";
+import { qalqilyaschoolsPage } from "../pages/qalqilyaschools/qalqilyaschools";
+import { tulkarmschoolsPage } from "../pages/tulkarmschools/tulkarmschools";
+import { ramallahschoolsPage } from "../pages/ramallahschools/ramallahschools";
 import { HebronschoolsPage } from "../pages/hebronschools/hebronschools";
 import { BethlehemschoolsPage } from "../pages/bethlehemschools/bethlehemschools";
 import { JerichoschoolsPage } from "../pages/jerichoschools/jerichoschools";
 import { ScanRegisterPage } from "../pages/scan-register/scan-register";
 import { ScanPage } from "../pages/scan/scan";
 import { RegscPage } from "../pages/regsc/regsc";
+<<<<<<< HEAD
 import { ComplainsPage } from '../pages/complains/complains';
+=======
+import { DriverPage } from "../pages/driver/driver";
+import { ProfilePage } from "../pages/profile/profile";
+>>>>>>> 12d6306e92f4a4ba3ebc7d061f6d4c3c0cc50fe5
 
 
 
@@ -66,7 +71,7 @@ const firebaseAuth = {
   declarations: [
     MyApp,
     SettingsPage,
-    JerusalemschoolsPage,
+    jerusalemschoolsPage,
     CheckoutTripPage,
     HomePage,
     LoginPage,
@@ -79,17 +84,19 @@ const firebaseAuth = {
     JerichoschoolsPage,
     BethlehemschoolsPage,
     NablusschoolsPage,
-    TulkarmschoolsPage,
-    QalqilyaschoolsPage,
-    JeninschoolsPage,
-    RamallahschoolsPage,
+    tulkarmschoolsPage,
+    qalqilyaschoolsPage,
+    jeninschoolsPage,
+    ramallahschoolsPage,
     HebronschoolsPage ,
     SchoolPage,
     ScanPage,
     ComplainsPage,
     RegscPage,
     ScanRegisterPage,
-    NewsPage
+    NewsPage,
+    ProfilePage,
+    DriverPage
   ],
   imports: [
     HttpModule,
@@ -117,7 +124,7 @@ const firebaseAuth = {
     LoginPage,
     LocalWeatherPage,
     NotificationsPage,
-    QalqilyaschoolsPage,
+    qalqilyaschoolsPage,
     RegisterPage,
     SearchLocationPage,
     TripDetailPage,
@@ -125,17 +132,19 @@ const firebaseAuth = {
     TripsPage,
     HebronschoolsPage ,
     BethlehemschoolsPage,
-    RamallahschoolsPage,
-    JeninschoolsPage,
-    TulkarmschoolsPage,
-    JerusalemschoolsPage,
+    ramallahschoolsPage,
+    jeninschoolsPage,
+    tulkarmschoolsPage,
+    jerusalemschoolsPage,
     NablusschoolsPage,
     SchoolPage,
     ScanPage,
     ComplainsPage,
     RegscPage,
     ScanRegisterPage,
-    NewsPage
+    NewsPage,
+    DriverPage,
+    ProfilePage
   ],
   providers: [
     BarcodeScanner,

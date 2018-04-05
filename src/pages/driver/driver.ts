@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the jeninschoolsPage page.
+ * Generated class for the DriverPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-jeninschools',
-  templateUrl: 'jeninschools.html',
+  selector: 'page-driver',
+  templateUrl: 'driver.html',
 })
-export class jeninschoolsPage {
+export class DriverPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad jeninschoolsPage');
+    console.log('ionViewDidLoad DriverPage');
   }
 
 }
