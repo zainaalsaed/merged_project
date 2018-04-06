@@ -42,12 +42,9 @@ import { JerichoschoolsPage } from "../pages/jerichoschools/jerichoschools";
 import { ScanRegisterPage } from "../pages/scan-register/scan-register";
 import { ScanPage } from "../pages/scan/scan";
 import { RegscPage } from "../pages/regsc/regsc";
-<<<<<<< HEAD
 import { ComplainsPage } from '../pages/complains/complains';
-=======
-import { DriverPage } from "../pages/driver/driver";
 import { ProfilePage } from "../pages/profile/profile";
->>>>>>> 12d6306e92f4a4ba3ebc7d061f6d4c3c0cc50fe5
+import { DriverPage } from "../pages/driver/driver";
 
 
 
