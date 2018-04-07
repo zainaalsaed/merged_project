@@ -25,26 +25,26 @@
  
 
 <ion-item >
-    <ion-label floating> Your Name</ion-label>
+    <ion-label floating color="primary"> Your Name</ion-label>
   <ion-input type="text" [(ngModel)]="name"></ion-input>
 </ion-item>
 
 
 <ion-item >
-  <ion-label floating>ID Number</ion-label>
+  <ion-label floating color="primary">ID Number</ion-label>
   <ion-input type="number" [(ngModel)]="identifierNum"></ion-input>
 </ion-item>
 
 
 <ion-item >
-  <ion-label floating>Email</ion-label>
+  <ion-label floating color="primary">Email</ion-label>
   <ion-input type="email" #username [(ngModel)]="mail"></ion-input>
 </ion-item>
  
 
 
  <ion-item >
-   <ion-label floating>
+   <ion-label floating color="primary">
     <ion-icon name="lock" item-start class="text-primary"></ion-icon>
   Password
 </ion-label>
@@ -52,7 +52,7 @@
 </ion-item>
       
   
-<ion-item><h1>
+<ion-item color="primary"><h1>
     
       Driving lisence Barcode : {{datay.text}}
     
@@ -64,7 +64,7 @@
         <ion-card-content no-padding>
     
           <ion-item>
-            <ion-label class="text-1x bold">Status?</ion-label>
+            <ion-label class="text-1x bold" color="primary">Status?</ion-label>
             <ion-select [(ngModel)]="status" (ionChange)="getStatus(status)">
             <ion-option [value]="yes">I have a driving Lisence</ion-option>
             <ion-option [value]="no">I don't have a driving Lisence</ion-option>

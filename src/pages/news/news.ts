@@ -55,7 +55,7 @@ export class NewsPage {
   }
   School(){
   
-    this.navCtrl.push(RamallahschoolsPage);
+    this.navCtrl.push(SchoolPage);
   }
   
   showComp(){

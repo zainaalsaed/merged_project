@@ -45,6 +45,8 @@ import { RegscPage } from "../pages/regsc/regsc";
 import { ComplainsPage } from '../pages/complains/complains';
 import { ProfilePage } from "../pages/profile/profile";
 import { DriverPage } from "../pages/driver/driver";
+import { StartPage } from "../pages/start/start";
+import { GuestPage } from "../pages/guest/guest";
 
 
 
@@ -93,7 +95,9 @@ const firebaseAuth = {
     ScanRegisterPage,
     NewsPage,
     ProfilePage,
-    DriverPage
+    DriverPage,
+    StartPage,
+    GuestPage
   ],
   imports: [
     HttpModule,
@@ -141,7 +145,9 @@ const firebaseAuth = {
     ScanRegisterPage,
     NewsPage,
     DriverPage,
-    ProfilePage
+    ProfilePage,
+    StartPage,
+    GuestPage
   ],
   providers: [
     BarcodeScanner,
