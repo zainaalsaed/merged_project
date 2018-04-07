@@ -18,6 +18,7 @@ import { RegisterPage } from '../register/register';
 import { RegscPage } from '../regsc/regsc';
 import { LocalWeatherPage } from '../local-weather/local-weather';
 import { SearchLocationPage } from '../search-location/search-location';
+import { ComplainsPage } from '../complains/complains';
 
 
 
@@ -54,7 +55,7 @@ export class NewsPage {
   }
   School(){
   
-    this.navCtrl.push(SchoolPage);
+    this.navCtrl.push(RamallahschoolsPage);
   }
   
   showComp(){
@@ -65,7 +66,9 @@ export class NewsPage {
 this.navCtrl.push(LocalWeatherPage);
 
   }
-
+  comp(){
+    this.navCtrl.push(ComplainsPage);
+  }
   
 
 }

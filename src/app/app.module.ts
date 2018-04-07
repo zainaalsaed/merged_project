@@ -42,8 +42,9 @@ import { JerichoschoolsPage } from "../pages/jerichoschools/jerichoschools";
 import { ScanRegisterPage } from "../pages/scan-register/scan-register";
 import { ScanPage } from "../pages/scan/scan";
 import { RegscPage } from "../pages/regsc/regsc";
-import { DriverPage } from "../pages/driver/driver";
+import { ComplainsPage } from '../pages/complains/complains';
 import { ProfilePage } from "../pages/profile/profile";
+import { DriverPage } from "../pages/driver/driver";
 
 
 
@@ -87,6 +88,7 @@ const firebaseAuth = {
     HebronschoolsPage ,
     SchoolPage,
     ScanPage,
+    ComplainsPage,
     RegscPage,
     ScanRegisterPage,
     NewsPage,
@@ -134,6 +136,7 @@ const firebaseAuth = {
     NablusschoolsPage,
     SchoolPage,
     ScanPage,
+    ComplainsPage,
     RegscPage,
     ScanRegisterPage,
     NewsPage,
