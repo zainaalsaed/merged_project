@@ -10,6 +10,7 @@ import { BarcodeScanner,BarcodeScannerOptions } from '@ionic-native/barcode-scan
 import { User } from '@firebase/auth-types';
 import { ScanPage } from "../scan/scan";
 import { DriverPage } from "../driver/driver";
+import { StartPage } from "../start/start";
 
 
 @Component({
@@ -131,7 +132,7 @@ encodedData:{};
 
   goBk(){
 
-    this.navCtrl.setRoot(NewsPage);
+    this.navCtrl.setRoot(StartPage);
 this.navCtrl.popToRoot();
   }
 
