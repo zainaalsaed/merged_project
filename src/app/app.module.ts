@@ -47,8 +47,9 @@ import { ProfilePage } from "../pages/profile/profile";
 import { DriverPage } from "../pages/driver/driver";
 import { StartPage } from "../pages/start/start";
 import { GuestPage } from "../pages/guest/guest";
-
-
+import { Geolocation } from '@ionic-native/geolocation';
+import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
+import { TrackPage } from "../pages/track/track";
 
 
 const firebaseAuth = {
@@ -97,7 +98,8 @@ const firebaseAuth = {
     ProfilePage,
     DriverPage,
     StartPage,
-    GuestPage
+    GuestPage,
+    TrackPage
   ],
   imports: [
     HttpModule,
@@ -147,9 +149,12 @@ const firebaseAuth = {
     DriverPage,
     ProfilePage,
     StartPage,
-    GuestPage
+    GuestPage,
+    TrackPage
   ],
   providers: [
+    Geolocation,
+    BackgroundGeolocation,
     BarcodeScanner,
     StatusBar,
     SplashScreen,

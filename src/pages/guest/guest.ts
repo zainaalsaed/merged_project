@@ -17,7 +17,7 @@ export class GuestPage {
 
   trainRoot = 'TrainPage'
   trafficRoot = 'TrafficPage'
-  accidentRoot = 'AccidentPage'
+  accidentRoot = 'TrackPage'
 
 
   constructor(public navCtrl: NavController) {}

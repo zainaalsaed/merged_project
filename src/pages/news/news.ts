@@ -19,6 +19,7 @@ import { RegscPage } from '../regsc/regsc';
 import { LocalWeatherPage } from '../local-weather/local-weather';
 import { SearchLocationPage } from '../search-location/search-location';
 import { ComplainsPage } from '../complains/complains';
+import { TrackPage } from '../track/track';
 
 
 
@@ -55,7 +56,7 @@ export class NewsPage {
   }
   School(){
   
-    this.navCtrl.push(SchoolPage);
+    this.navCtrl.push(TrackPage);
   }
   
   showComp(){
