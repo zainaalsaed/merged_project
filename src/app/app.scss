@@ -3,6 +3,41 @@
 // --------------------------------------------------
 
 // global styles
+
+/*@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Varela+Round');
+$font-family-base: 'Varela Round', sans-serif !default;
+$font-family-base: 'Arima Madurai', cursive !default;
+
+*/
+/*
+@font-face {
+  font-family:  'Varela Round', sans-serif;
+  font-family: 'Arima Madurai', cursive;
+  src: url('../assets/fonts/VarelaRound-Regular.ttf') format('ttf'), url('../assets/fonts/VarelaRound-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Varela Round', sans-serif;
+}
+*/
+
+#rounded {
+  width: 100%;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 10px;
+  margin-bottom: 10px;  
+}
+
+#container {
+  width: 300px; 
+  margin-left:auto; 
+  margin-right: auto; 
+}
+
 .primary-bg {
   background-color: color($colors, primary) !important;
 }
@@ -41,6 +76,7 @@
 //
 //
 .text-primary {
+  
   color: color($colors, primary);
 }
 
@@ -312,6 +348,8 @@ ion-navbar.no-border {
 
 
 
+  
+
 
 
   // http://ionicframework.com/docs/theming/
@@ -379,7 +417,7 @@ ion-content[class*="content"] {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  background: white;
+  background: rgb(255, 255, 255);
   border: 1px solid black;
   ion-icon {
       font-size: 4.5em;
@@ -455,6 +493,7 @@ ion-item.item {
       width: 86%;
 
       .logo {
+        
         width: 200px;
         height: 200px;
         margin: 20px auto 0;
