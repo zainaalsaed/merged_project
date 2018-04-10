@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import {NewsPage} from "../news/news";
 /**
  * Generated class for the ViolationsPage page.
  *
@@ -21,5 +21,6 @@ export class ViolationsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ViolationsPage');
   }
+  
 
 }

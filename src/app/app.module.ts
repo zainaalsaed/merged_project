@@ -45,6 +45,7 @@ import { RegscPage } from "../pages/regsc/regsc";
 import { ComplainsPage } from '../pages/complains/complains';
 import { ProfilePage } from "../pages/profile/profile";
 import { DriverPage } from "../pages/driver/driver";
+import { ViolationsPage } from "../pages/violations/violations";
 
 
 
@@ -87,6 +88,7 @@ const firebaseAuth = {
     ramallahschoolsPage,
     HebronschoolsPage ,
     SchoolPage,
+    ViolationsPage ,
     ScanPage,
     ComplainsPage,
     RegscPage,
@@ -127,6 +129,7 @@ const firebaseAuth = {
     TripDetailPage,
     JerichoschoolsPage,
     TripsPage,
+    ViolationsPage ,
     HebronschoolsPage ,
     BethlehemschoolsPage,
     ramallahschoolsPage,
