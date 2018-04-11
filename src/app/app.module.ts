@@ -45,17 +45,14 @@ import { RegscPage } from "../pages/regsc/regsc";
 import { ComplainsPage } from '../pages/complains/complains';
 import { ProfilePage } from "../pages/profile/profile";
 import { DriverPage } from "../pages/driver/driver";
-<<<<<<< HEAD
 import { ViolationsPage } from "../pages/violations/violations";
 
-
-=======
 import { StartPage } from "../pages/start/start";
 import { GuestPage } from "../pages/guest/guest";
 import { Geolocation } from '@ionic-native/geolocation';
 import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import { TrackPage } from "../pages/track/track";
->>>>>>> 852cacfd66011c4bd35daf7d423f953fe5f672c8
+
 
 
 const firebaseAuth = {

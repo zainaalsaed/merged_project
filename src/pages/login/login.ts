@@ -11,6 +11,7 @@ import { User } from '@firebase/auth-types';
 import { ScanPage } from "../scan/scan";
 import { DriverPage } from "../driver/driver";
 import { StartPage } from "../start/start";
+import { TrackPage } from "../track/track";
 
 
 @Component({
@@ -63,7 +64,7 @@ encodedData:{};
     .then( data => {
       console.log('got some data', this.fire.auth.currentUser);
       this.alert('Success! You\'re logged in');
-      this.navCtrl.setRoot(DriverPage);
+      this.navCtrl.setRoot(TrackPage);
       // user is logged in
     })
     .catch( error => {
