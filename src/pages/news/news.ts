@@ -19,12 +19,8 @@ import { RegscPage } from '../regsc/regsc';
 import { LocalWeatherPage } from '../local-weather/local-weather';
 import { SearchLocationPage } from '../search-location/search-location';
 import { ComplainsPage } from '../complains/complains';
-<<<<<<< HEAD
-import { ViolationsPage } from '../violations/violations';
-
-=======
 import { TrackPage } from '../track/track';
->>>>>>> 852cacfd66011c4bd35daf7d423f953fe5f672c8
+import { ViolationsPage } from '../violations/violations';
 
 
 
@@ -61,11 +57,7 @@ export class NewsPage {
   }
   School(){
   
-<<<<<<< HEAD
-    this.navCtrl.push(ramallahschoolsPage);
-=======
     this.navCtrl.push(TrackPage);
->>>>>>> 852cacfd66011c4bd35daf7d423f953fe5f672c8
   }
   
   showComp(){

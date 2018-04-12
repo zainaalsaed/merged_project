@@ -64,7 +64,7 @@ encodedData:{};
     .then( data => {
       console.log('got some data', this.fire.auth.currentUser);
       this.alert('Success! You\'re logged in');
-      this.navCtrl.setRoot(TrackPage);
+      this.navCtrl.setRoot(DriverPage);
       // user is logged in
     })
     .catch( error => {

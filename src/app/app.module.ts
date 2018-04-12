@@ -46,7 +46,7 @@ import { ComplainsPage } from '../pages/complains/complains';
 import { ProfilePage } from "../pages/profile/profile";
 import { DriverPage } from "../pages/driver/driver";
 import { ViolationsPage } from "../pages/violations/violations";
-
+import { AngularFireObject, AngularFireList } from 'angularfire2/database';
 import { StartPage } from "../pages/start/start";
 import { GuestPage } from "../pages/guest/guest";
 import { Geolocation } from '@ionic-native/geolocation';
