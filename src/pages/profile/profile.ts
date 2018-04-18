@@ -4,8 +4,11 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { People } from '../../models/people';
 import { AngularFireObject, AngularFireList } from 'angularfire2/database';
-import {  FirebaseListObservable } from "angularfire2/database";
+import {FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2/database-deprecated';
+import { Observable } from 'rxjs/Observable';
 /**
+ * 
+ * 
  * Generated class for the ProfilePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
@@ -19,27 +22,31 @@ import {  FirebaseListObservable } from "angularfire2/database";
 })
 export class ProfilePage {
 
-  userData : FirebaseListObservable<People>
+  userData : FirebaseObjectObservable<People>;
   
   constructor(public navCtrl: NavController,
     private afAuth: AngularFireAuth ,
-    private afDatabase: AngularFireDatabase,
+    private afDatabase: AngularFireDatabase,afDb: AngularFireDatabase,
      public navParams: NavParams) {
+      this.afAuth.authState.subscribe(data => {
+        if(data && data.email && data.uid)   {
+  
+          //this.products = this.db.list(products/${this.userId}).valueChanges()
+       //   this.userData = this.afDatabase.object('user/'+ data.uid).valueChanges();
+         }
+        
+        
+        }
+    );
+      
+
   }
+
 
   ionViewDidLoad() {
     console.log(' ionViewDidLoad ProfilePage');
 
-    this.afAuth.authState.subscribe(data => {
-      if(data && data.email && data.uid)  {
-       
-        //this.products = this.db.list(products/${this.userId}).valueChanges()
-        this.userData = this.afDatabase.object('people/'+ data.uid).valueChanges();
-       }
-      
-      
-      }
-  );
+    
   }
 
 }

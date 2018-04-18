@@ -14,6 +14,7 @@ import { BethlehemschoolsPage } from "../bethlehemschools/bethlehemschools";
 import { JerichoschoolsPage } from "../jerichoschools/jerichoschools";
 import { ScanPage } from '../scan/scan';
 import { HomePage } from '../home/home';
+import { EduPage } from '../edu/edu';
 import { RegisterPage } from '../register/register';
 import { RegscPage } from '../regsc/regsc';
 import { LocalWeatherPage } from '../local-weather/local-weather';
@@ -70,6 +71,9 @@ this.navCtrl.push(LocalWeatherPage);
   }
   comp(){
     this.navCtrl.push(ViolationsPage);
+  }
+  educ(){
+    this.navCtrl.push(EduPage);
   }
   
 

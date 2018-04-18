@@ -52,6 +52,7 @@ import { GuestPage } from "../pages/guest/guest";
 import { Geolocation } from '@ionic-native/geolocation';
 import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import { TrackPage } from "../pages/track/track";
+import { EduPage } from "../pages/edu/edu";
 
 
 
@@ -77,6 +78,7 @@ const firebaseAuth = {
     jerusalemschoolsPage,
     CheckoutTripPage,
     HomePage,
+    EduPage,
     LoginPage,
     LocalWeatherPage,
     NotificationsPage,
@@ -137,6 +139,7 @@ const firebaseAuth = {
     TripDetailPage,
     JerichoschoolsPage,
     TripsPage,
+    EduPage,
     ViolationsPage ,
     HebronschoolsPage ,
     BethlehemschoolsPage,
