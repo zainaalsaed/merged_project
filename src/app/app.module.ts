@@ -106,6 +106,7 @@ const firebaseAuth = {
     StartPage,
     GuestPage,
     TrackPage
+    //TestPage
   ],
   imports: [
     HttpModule,
@@ -159,6 +160,7 @@ const firebaseAuth = {
     StartPage,
     GuestPage,
     TrackPage
+    //TestPage
   ],
   providers: [
     Geolocation,

@@ -1,12 +1,12 @@
 import { Component,NgZone } from '@angular/core';
-import { NavController,NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 import { Geolocation , Geoposition} from '@ionic-native/geolocation';
 import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import 'rxjs/add/operator/filter';
 
 @Component({
-  selector: 'page-track',
+  selector: 'track-home',
   templateUrl: 'track.html'
 
 })
