@@ -50,6 +50,7 @@ import { GuestPage } from "../pages/guest/guest";
 import { Geolocation } from '@ionic-native/geolocation';
 import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import { TrackPage } from "../pages/track/track";
+import { TestPage } from "../pages/test/test";
 
 
 const firebaseAuth = {
@@ -100,6 +101,7 @@ const firebaseAuth = {
     StartPage,
     GuestPage,
     TrackPage
+    //TestPage
   ],
   imports: [
     HttpModule,
@@ -151,6 +153,7 @@ const firebaseAuth = {
     StartPage,
     GuestPage,
     TrackPage
+    //TestPage
   ],
   providers: [
     Geolocation,

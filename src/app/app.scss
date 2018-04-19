@@ -399,7 +399,7 @@ ion-content:before {
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  background: rgba(42, 61, 77, 1) !important;
+  background: rgb(255, 255, 255) !important;
 }
 
 ion-content[class*="content"] {
@@ -776,7 +776,7 @@ ion-content:before {
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  background: rgba(42, 61, 77, 1) !important;
+  background: rgb(254, 255, 255) !important;
 }
 
 ion-content[class*="content"] {
@@ -785,7 +785,7 @@ ion-content[class*="content"] {
   width: 100vw;
   flex-direction: column;
   background: url("../assets/img/bg.jpg") center bottom 100%/cover no-repeat border-box fixed;
-  color: rgb(117, 102, 102);
+  color: rgb(255, 255, 255);
 }
 
 .block {
