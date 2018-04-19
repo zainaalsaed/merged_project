@@ -45,12 +45,19 @@ import { RegscPage } from "../pages/regsc/regsc";
 import { ComplainsPage } from '../pages/complains/complains';
 import { ProfilePage } from "../pages/profile/profile";
 import { DriverPage } from "../pages/driver/driver";
+import { ViolationsPage } from "../pages/violations/violations";
+import { AngularFireObject, AngularFireList } from 'angularfire2/database';
 import { StartPage } from "../pages/start/start";
 import { GuestPage } from "../pages/guest/guest";
 import { Geolocation } from '@ionic-native/geolocation';
 import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import { TrackPage } from "../pages/track/track";
+<<<<<<< HEAD
 import { TestPage } from "../pages/test/test";
+=======
+import { EduPage } from "../pages/edu/edu";
+
+>>>>>>> 1d2225559d47bceb98b7bc216c6da1b377188189
 
 
 const firebaseAuth = {
@@ -75,6 +82,7 @@ const firebaseAuth = {
     jerusalemschoolsPage,
     CheckoutTripPage,
     HomePage,
+    EduPage,
     LoginPage,
     LocalWeatherPage,
     NotificationsPage,
@@ -91,6 +99,7 @@ const firebaseAuth = {
     ramallahschoolsPage,
     HebronschoolsPage ,
     SchoolPage,
+    ViolationsPage ,
     ScanPage,
     ComplainsPage,
     RegscPage,
@@ -135,6 +144,8 @@ const firebaseAuth = {
     TripDetailPage,
     JerichoschoolsPage,
     TripsPage,
+    EduPage,
+    ViolationsPage ,
     HebronschoolsPage ,
     BethlehemschoolsPage,
     ramallahschoolsPage,

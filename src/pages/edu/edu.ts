@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {NewsPage} from "../news/news";
+
 /**
- * Generated class for the ViolationsPage page.
+ * Generated class for the EduPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,17 +11,16 @@ import {NewsPage} from "../news/news";
 
 @IonicPage()
 @Component({
-  selector: 'page-violations',
-  templateUrl: 'violations.html',
+  selector: 'page-edu',
+  templateUrl: 'edu.html',
 })
-export class ViolationsPage {
+export class EduPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ViolationsPage');
+    console.log('ionViewDidLoad EduPage');
   }
-  
 
 }

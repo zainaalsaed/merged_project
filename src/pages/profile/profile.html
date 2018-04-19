@@ -1,9 +1,3 @@
-<!--
-  Generated template for the ProfilePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
@@ -13,6 +7,16 @@
 </ion-header>
 
 
-<ion-content padding>
-Hello!
+<ion-content>
+<div class="profile-container">
+  <div class="profile-img-circle">
+      <img src="../assets/img/avatar.jpeg" alt="">
+  </div>
+</div>
+<div class="profile-content">
+    <h2>  {{(userData | async)?.mail}} </h2>
+  <h2>{{(userData | async)?.name}}</h2>
+  <h4>{{(userData | async)?.status}}</h4>
+  
+</div>
 </ion-content>

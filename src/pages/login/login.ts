@@ -11,6 +11,7 @@ import { User } from '@firebase/auth-types';
 import { ScanPage } from "../scan/scan";
 import { DriverPage } from "../driver/driver";
 import { StartPage } from "../start/start";
+import { TrackPage } from "../track/track";
 
 
 @Component({
