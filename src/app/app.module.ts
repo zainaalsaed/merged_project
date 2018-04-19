@@ -52,12 +52,8 @@ import { GuestPage } from "../pages/guest/guest";
 import { Geolocation } from '@ionic-native/geolocation';
 import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import { TrackPage } from "../pages/track/track";
-<<<<<<< HEAD
-import { TestPage } from "../pages/test/test";
-=======
 import { EduPage } from "../pages/edu/edu";
 
->>>>>>> 1d2225559d47bceb98b7bc216c6da1b377188189
 
 
 const firebaseAuth = {
