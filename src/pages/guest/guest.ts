@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
+import { TrainPage } from '../train/train';
+import { PrivatePage } from '../private/private';
 
 /**
  * Generated class for the GuestPage tabs.

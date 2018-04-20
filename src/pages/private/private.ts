@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PrivatePage } from '../private/private';
-
+import { TrainPage } from '../train/train';
+import { GuestPage } from '../guest/guest';
 /**
- * Generated class for the TrainPage page.
+ * Generated class for the PrivatePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +11,16 @@ import { PrivatePage } from '../private/private';
 
 @IonicPage()
 @Component({
-  selector: 'page-train',
-  templateUrl: 'train.html',
+  selector: 'page-private',
+  templateUrl: 'private.html',
 })
-export class TrainPage {
+export class PrivatePage {
 
-  nav: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TrainPage');
-  }
-  pri(){
-    this.nav.push(PrivatePage);
+    console.log('ionViewDidLoad PrivatePage');
   }
 
 }
