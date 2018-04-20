@@ -1,5 +1,5 @@
 <!--
-  Generated template for the PaymentPage page.
+  Generated template for the EventPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,12 +7,24 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>payment</ion-title>
+    <ion-title>event</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <div>
+<ion-slides pager>
+  <ion-slide *ngFor="let slide of slider">
+    <img [src]= "slide.image"/>
+  </ion-slide>
+</ion-slides>
+</div>
+<p>As the seasons change, we warm our hearts with the tunes 
+  that instantly bring memories of our loved ones
+   and this most favorite time of year.</p>
+
+   <button ion-button color="secondary" block (click)="doPrompt()">Purchase Tickets</button>
 
 </ion-content>
