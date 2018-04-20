@@ -107,7 +107,8 @@ const firebaseAuth = {
     DriverPage,
     StartPage,
     GuestPage,
-    TrackPage
+    TrackPage,
+    PrivatePage
     //TestPage
   ],
   imports: [
@@ -162,7 +163,8 @@ const firebaseAuth = {
     ProfilePage,
     StartPage,
     GuestPage,
-    TrackPage
+    TrackPage,
+    PrivatePage
     //TestPage
   ],
   providers: [

@@ -23,7 +23,7 @@ export class TrainPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TrainPage');
   }
-  priclc(){
+  priVlc(){
     this.nav.push(PrivatePage);
   }
 
