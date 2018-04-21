@@ -1,16 +1,15 @@
 import { Component , ViewChild,ElementRef } from '@angular/core';
-import { NavController, IonicPage } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 declare var google;
 
-@IonicPage()
 @Component({
-  selector: 'page-accident',
-  templateUrl: 'accident.html'
+  selector: 'page-mahakemmap',
+  templateUrl: 'mahakemmap.html'
 })
-export class AccidentPage {
+export class MahakemmapPage {
 
   @ViewChild('map') mapElement: ElementRef;
   map: any;
@@ -42,7 +41,7 @@ this.getMarkers();
 
 
 getMarkers(){
-  this.http.get('assets/data/acc.json').map((res)=>res.json()).subscribe(data=>{
+  this.http.get('assets/data/markers.json').map((res)=>res.json()).subscribe(data=>{
     this.addMarkersMap(data);
 
   });

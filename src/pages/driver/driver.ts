@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PaymentPage } from '../payment/payment';
+import {DriveraccPage } from '../driveracc/driveracc';
 
 /**
  * Generated class for the DriverPage page.
@@ -24,9 +26,18 @@ export class DriverPage {
 
 
 
-  showVio(){
+  
+
+  gotPay(){
+
+this.navCtrl.push(PaymentPage);
+  
+}
+driverAccident(){
+  this.navCtrl.push(DriveraccPage);
 
 
-    
-  }
+
+}
+  
 }

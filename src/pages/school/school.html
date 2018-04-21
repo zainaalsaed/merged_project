@@ -5,7 +5,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <strong>Ministry of Transportation </strong> Start Theme
+      <strong>Search for a specific school</strong>
     </ion-title>
   </ion-navbar>
   
@@ -21,7 +21,7 @@
   </div>
 
   <ion-list>
-      <ion-item [(ngModel)]="itemz" *ngFor="let item of items" class="spinner-container" tappable (click)="reg($event,item)">
+      <ion-item [(ngModel)]="itemz" color="primary" *ngFor="let item of items" class="spinner-container" tappable (click)="reg($event,item)">
         {{item.title}}
       </ion-item>
   </ion-list>

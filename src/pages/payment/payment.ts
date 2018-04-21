@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { MahakemmapPage } from '../mahakemmap/mahakemmap';
 
 /**
  * Generated class for the EventDetailPage page.
@@ -25,11 +26,11 @@ export class PaymentPage {
   slider = [
     {
       title : 'Special Invitation',
-      image :"assets/imgs/music.png"
+      image :"assets/img/music.jpg"
     },
     {
       title : 'Location',
-      image :"assets/imgs/music.png"
+      image :"assets/img/music.jpg"
     }
 
   ];
@@ -68,5 +69,9 @@ export class PaymentPage {
   }
 
 
+mahakem(){
+  this.navCtrl.push(MahakemmapPage);
 
+
+}
 }

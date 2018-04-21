@@ -37,8 +37,8 @@
     </div>
 
     <div class="block">
-      <ion-icon name="contacts" class="reports" tappable (click)="showVio()"></ion-icon>
-      <ion-label>Check/Pay your Traffic violations</ion-label>
+      <ion-icon name="contacts" class="reports" tappable (click)="gotPay()"></ion-icon>
+      <ion-label>Pay your Traffic tickets</ion-label>
     </div>
 
   <div class="block">
@@ -54,8 +54,8 @@
     <ion-label>Traffic today</ion-label>
   </div>
   <div class="block">
-    <ion-icon ios="ios-bus" md="md-bus"></ion-icon>   
-     <ion-label>Accedents</ion-label>
+    <ion-icon ios="ios-bus" md="md-bus"   tappable (click)="driverAccident()"></ion-icon>   
+     <ion-label>Accidents</ion-label>
   </div>
   <div class="block">
     <ion-icon ios="ios-paper" md="md-paper"></ion-icon> 

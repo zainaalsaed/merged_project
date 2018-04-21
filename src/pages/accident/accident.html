@@ -1,18 +1,19 @@
-<!--
-  Generated template for the AccidentPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
+    <ion-toolbar>
+        <ion-buttons>
+          <button ion-button menuToggle>
+            <ion-icon name="menu" color="primary"></ion-icon>
+          </button>
+          <button ><ion-icon style="padding-right:4px" name="log-out"></ion-icon>
+            Logout</button>
+        </ion-buttons>
+      </ion-toolbar>
   <ion-navbar>
-    <ion-title>Today's Accidents</ion-title>
+    <ion-title>Accidents near your Location</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
-<ion-content padding class="animated fadeIn login auth-page">
-
+<ion-content padding>
+  <div #map id="map" style="height:100%"></div>
 </ion-content>

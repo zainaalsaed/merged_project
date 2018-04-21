@@ -12,15 +12,15 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="animated fadeIn login auth-page">
+<ion-content padding >
   <div class="block">
    <ion-icon ios="ios-contacts" md="md-contacts" tappable (click)="account()"></ion-icon>
     <ion-label>Accounts</ion-label>
   </div>
 
   <div class="block">
-    <ion-icon ios="ios-people" md="md-people"></ion-icon>
-      <ion-label>Employees</ion-label>
+    <ion-icon ios="ios-people" md="md-people"  tappable (click)="showsMap()"></ion-icon>
+      <ion-label>Show schools on map</ion-label>
     </div>
 
     <div class="block">

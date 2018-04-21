@@ -29,7 +29,7 @@ import { JerichoschoolsPage } from "../jerichoschools/jerichoschools";
   providers: [MyProvider]
 })
 export class SchoolPage {
-  itemz: string;
+  //itemz: string;
   item:any;
   nav: any;
   searchTerm: string = '';
