@@ -22,6 +22,7 @@ import { SearchLocationPage } from '../search-location/search-location';
 import { ComplainsPage } from '../complains/complains';
 import { TrackPage } from '../track/track';
 import { ViolationsPage } from '../violations/violations';
+import { SchoolmapPage } from '../schoolmap/schoolmap';
 
 
 
@@ -75,6 +76,10 @@ this.navCtrl.push(LocalWeatherPage);
   educ(){
     this.navCtrl.push(EduPage);
   }
-  
+  showsMap(){
+
+
+    this.navCtrl.push(SchoolmapPage);
+  }
 
 }

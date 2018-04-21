@@ -3,6 +3,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 import { TrainPage } from '../train/train';
 import { PrivatePage } from '../private/private';
 
+
 /**
  * Generated class for the GuestPage tabs.
  *
@@ -19,7 +20,7 @@ export class GuestPage {
 
   trainRoot = 'TrainPage'
   trafficRoot = 'TrafficPage'
-  testRoot = 'TestPage'
+  accidentRoot = 'AccidentPage'
 
 
   constructor(public navCtrl: NavController) {}

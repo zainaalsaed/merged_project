@@ -7,10 +7,10 @@ declare var google;
 
 @IonicPage()
 @Component({
-  selector: 'page-accident',
-  templateUrl: 'accident.html'
+  selector: 'page-driveracc',
+  templateUrl: 'driveracc.html'
 })
-export class AccidentPage {
+export class DriveraccPage {
 
   @ViewChild('map') mapElement: ElementRef;
   map: any;
