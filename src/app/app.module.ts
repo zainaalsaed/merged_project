@@ -61,6 +61,8 @@ import {  DriveraccPage } from "../pages/driveracc/driveracc";
 import { SchoolmapPage } from "../pages/schoolmap/schoolmap";
 
 import { TruckPage } from "../pages/truck/truck";
+import { TableeghPage } from "../pages/tableegh/tableegh";
+import { TableeghacPage } from "../pages/tableeghac/tableeghac";
 
 
 
@@ -120,7 +122,9 @@ const firebaseAuth = {
     PaymentPage,
     MahakemmapPage,
     DriveraccPage,
-    SchoolmapPage
+    SchoolmapPage,
+    TableeghPage,
+    TableeghacPage
     //TestPage
   ],
   imports: [
@@ -181,7 +185,9 @@ const firebaseAuth = {
     PaymentPage,
     MahakemmapPage,
     DriveraccPage,
-    SchoolmapPage
+    SchoolmapPage,
+    TableeghPage,
+    TableeghacPage
     //TestPage
   ],
   providers: [

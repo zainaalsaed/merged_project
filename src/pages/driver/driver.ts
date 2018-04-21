@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PaymentPage } from '../payment/payment';
 import {DriveraccPage } from '../driveracc/driveracc';
+import { TableeghPage } from '../tableegh/tableegh';
 
 /**
  * Generated class for the DriverPage page.
@@ -38,6 +39,9 @@ driverAccident(){
 
 
 
+}
+addRep(){
+  this.navCtrl.push(TableeghPage);
 }
   
 }

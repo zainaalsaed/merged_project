@@ -2,6 +2,8 @@ import { Component , ViewChild,ElementRef } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
+import { TableeghPage } from '../tableegh/tableegh';
+import { TableeghacPage } from '../tableeghac/tableeghac';
 
 declare var google;
 
@@ -62,5 +64,8 @@ for(let marker of markers){
 
 }
 }
+addAccd(){
 
+  this.navCtrl.push(TableeghacPage);
+}
 }
