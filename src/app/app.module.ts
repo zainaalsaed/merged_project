@@ -54,13 +54,12 @@ import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import { TrackPage } from "../pages/track/track";
 import { EduPage } from "../pages/edu/edu";
 import { PrivatePage } from "../pages/private/private";
-<<<<<<< HEAD
+
 import { PaymentPage } from "../pages/payment/payment";
 import { MahakemmapPage } from "../pages/mahakemmap/mahakemmap";
 import {  DriveraccPage } from "../pages/driveracc/driveracc";
 import { SchoolmapPage } from "../pages/schoolmap/schoolmap";
 
-=======
 import { TruckPage } from "../pages/truck/truck";
 
 
