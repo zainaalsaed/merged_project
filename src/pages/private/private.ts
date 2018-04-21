@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TrainPage } from '../train/train';
 import { GuestPage } from '../guest/guest';
+import { TruckPage } from '../truck/truck';
 /**
  * Generated class for the PrivatePage page.
  *
@@ -21,6 +22,13 @@ export class PrivatePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PrivatePage');
+  }
+  priVlc(){
+    this.navCtrl.push(PrivatePage);
+  }
+  truVlc()
+  {
+    this.navCtrl.push(TruckPage);
   }
 
 }
