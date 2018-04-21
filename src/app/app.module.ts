@@ -54,6 +54,7 @@ import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import { TrackPage } from "../pages/track/track";
 import { EduPage } from "../pages/edu/edu";
 import { PrivatePage } from "../pages/private/private";
+import { TruckPage } from "../pages/truck/truck";
 
 
 
@@ -76,6 +77,7 @@ const firebaseAuth = {
   declarations: [
     MyApp,
     SettingsPage,
+    TruckPage,
     jerusalemschoolsPage,
     CheckoutTripPage,
     HomePage,
@@ -131,6 +133,7 @@ const firebaseAuth = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    TruckPage,
     SettingsPage,
     CheckoutTripPage,
     HomePage,

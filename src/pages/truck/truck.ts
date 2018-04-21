@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PrivatePage } from '../private/private';
+import { TrainPage } from '../train/train';
 import { GuestPage } from '../guest/guest';
-import { TruckPage } from "../truck/truck";
+import { PrivatePage } from '../private/private';
 
 /**
- * Generated class for the TrainPage page.
+ * Generated class for the TruckPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,17 +13,16 @@ import { TruckPage } from "../truck/truck";
 
 @IonicPage()
 @Component({
-  selector: 'page-train',
-  templateUrl: 'train.html',
+  selector: 'page-truck',
+  templateUrl: 'truck.html',
 })
-export class TrainPage {
+export class TruckPage {
 
-  nav: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TrainPage');
+    console.log('ionViewDidLoad TruckPage');
   }
   priVlc(){
     this.navCtrl.push(PrivatePage);

@@ -8,7 +8,7 @@ import { Keyboard } from '@ionic-native/keyboard';
 import { HomePage } from "../pages/home/home";
 
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
-
+import { PrivatePage } from "../pages/private/private";
 import { StartPage } from "../pages/start/start";
 import { LoginPage } from "../pages/login/login";
 import { NewsPage } from "../pages/news/news";
