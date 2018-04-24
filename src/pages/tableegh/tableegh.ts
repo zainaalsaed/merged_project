@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {AlertController, IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AngularFireModule } from 'angularfire2';
+import * as firebase from 'firebase/app';
+import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
+import {FirebaseListObservable} from 'angularfire2/database-deprecated';
+import { NewsPage } from '../news/news';
 
 /**
  * Generated class for the TableeghPage page.
@@ -14,9 +19,30 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'tableegh.html',
 })
 export class TableeghPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  tableeghList :  AngularFireList<any>;
+  constructor( private alertCtrl: AlertController,  public db: AngularFireDatabase,public navCtrl: NavController, public navParams: NavParams) {
+    this.tableeghList = db.list('/tableegh')
+ 
+  
+  
   }
+  alert(message: string) {
+    this.alertCtrl.create({
+      title: 'Submitted!',
+      subTitle: message,
+      buttons: ['OK']
+    }).present();
+  }
+  createTableegh(platNum,platType,description){
+    this.tableeghList.push({
+      platNum : platNum,
+        platType : platType,
+        description : description,
+
+        }).then(newTableegh =>{
+    this.navCtrl.push(TableeghPage);
+    },error=>{console.log(error);});
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TableeghPage');

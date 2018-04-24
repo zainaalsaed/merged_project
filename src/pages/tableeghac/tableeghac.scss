@@ -3,41 +3,16 @@ page-tableeghac ,
 .row {
   margin-left: -10px;
   margin-right: -10px;
+  padding-top: 15px;
 }
-
-element.style {
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-element.style {
-  padding-left: 5px;
-  padding-right: 5px;
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
 }
 label {
   font-weight: normal;
   margin-bottom: 5px !important;
   color: #4a535e;
-}
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
 }
 .eservices .form-control {
   height: 30px;
@@ -45,6 +20,54 @@ label {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 3px 10px;
+}
+.form-control {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  padding: 10px;
+  height: 50px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 14px;
+  border-color: #fcfcfc;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button, input {
+  line-height: normal;
+}
+button, input, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+}
+.col-sm-2 {
+  width: 16.666666666666664%;
 }
 .panel-primary .panel-heading, .panel-success .panel-heading, .panel-warning .panel-heading, .panel-danger .panel-heading, .panel-info .panel-heading {
   border-bottom: 0;
@@ -64,19 +87,7 @@ label {
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
-}
-.panel-body {
+}.panel-body {
   padding: 20px;
+  background: #acc2db
 }
-.panel-body {
-  padding: 15px;
-}
-.panel-body:before, .panel-body:after {
-  display: table;
-  content: " ";
-}
-.panel-body:before, .panel-body:after {
-  display: table;
-  content: " ";
-}
-
