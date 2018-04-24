@@ -64,7 +64,7 @@ for(let marker of markers){
 
 }
 }
-addAccd(){
+addAccii(){
 
   this.navCtrl.push(TableeghacPage);
 }

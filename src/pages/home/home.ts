@@ -16,7 +16,7 @@ import {SearchLocationPage} from "../search-location/search-location";
 export class HomePage {
   // search condition
   public search = {
-    name: "Rio de Janeiro, Brazil",
+    name: "Zaina Al-Saed",
     date: new Date().toISOString()
   }
 
