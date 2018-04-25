@@ -64,6 +64,8 @@ import { TruckPage } from "../pages/truck/truck";
 import { TableeghPage } from "../pages/tableegh/tableegh";
 import { TableeghacPage } from "../pages/tableeghac/tableeghac";
 import { TestPage } from "../pages/test/test";
+import { MenuPage } from "../pages/menu/menu";
+import { ListPage } from "../pages/list/list";
 
 
 
@@ -89,10 +91,12 @@ const firebaseAuth = {
     TruckPage,
     jerusalemschoolsPage,
     CheckoutTripPage,
+    MenuPage,
     HomePage,
     EduPage,
     PrivatePage,
     LoginPage,
+    ListPage,
     LocalWeatherPage,
     NotificationsPage,
     RegisterPage,
@@ -159,6 +163,8 @@ const firebaseAuth = {
     qalqilyaschoolsPage,
     RegisterPage,
     PrivatePage,
+    MenuPage,
+    ListPage,
     SearchLocationPage,
     TripDetailPage,
     JerichoschoolsPage,

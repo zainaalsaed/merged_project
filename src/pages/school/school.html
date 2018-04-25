@@ -21,9 +21,11 @@
   </div>
 
   <ion-list>
-      <ion-item [(ngModel)]="itemz" color="primary" *ngFor="let item of items" class="spinner-container" tappable (click)="reg($event,item)">
+      <button ion-item *ngFor="let item of items" class="spinner-container" color="primary" tappable (click)="itemTapped1(event, item)">
         {{item.title}}
-      </ion-item>
+      </button>
   </ion-list>
- 
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
 </ion-content>

@@ -30,17 +30,32 @@ import { JerichoschoolsPage } from "../jerichoschools/jerichoschools";
 })
 export class SchoolPage {
   //itemz: string;
-  item:any;
+  items: Array<{title: string}>;
+  selectedItem: any;
   nav: any;
   searchTerm: string = '';
     searchControl: FormControl;
-    items: any=[];
+   
     searching: any = false;
  
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public dataService:MyProvider ) {
     this.searchControl = new FormControl();
-    this.item=navParams.get('data');
+    this.selectedItem = navParams.get('item');
+    this.items = [
+      {title: 'Nablus' },
+      {title: 'Ramallah'},
+      {title: 'Tulkarm'},
+      {title: 'jenin'},
+      {title: 'qalqilya'},
+      {title: 'jerusalem'},
+      {title: 'Hebron'},
+      {title: 'Bethlehem'},
+      {title: 'Jericho'}
+  ]
+  
+  this.items.push({
+    title: 'Item ' });
   }
   
 
@@ -70,12 +85,47 @@ setFilteredItems() {
 }
 searchBoxValue="";
 
-reg($event,item) { 
-
-  if ( item.id==0)
-  {this.nav.push(JerichoschoolsPage);}
- 
+itemTapped1(event, item) {
+  // That's right, we're pushing to ourselves!
+  if (item.title==="Nablus")
+  this.navCtrl.push(NablusschoolsPage, {
+    item: item
+  });
+  if (item.title==="Ramallah")
+  this.navCtrl.push(ramallahschoolsPage, {
+    item: item
+  });
+  if (item.title==="Tulkarm")
+  this.navCtrl.push(tulkarmschoolsPage, {
+    item: item
+  });
+  if (item.title==="jenin")
+  this.navCtrl.push(jeninschoolsPage, {
+    item: item
+  });
+  if (item.title==="qalqilya")
+  this.navCtrl.push(qalqilyaschoolsPage, {
+    item: item
+  });
+  if (item.title==="jerusalem")
+  this.navCtrl.push(jerusalemschoolsPage, {
+    item: item
+  });
+  if (item.title==="Hebron")
+  this.navCtrl.push(HebronschoolsPage, {
+    item: item
+  });
+  if (item.title==="Bethlehem")
+  this.navCtrl.push(BethlehemschoolsPage, {
+    item: item
+  });
+  if (item.title==="Jericho")
+  this.navCtrl.push(JerichoschoolsPage, {
+    item: item
+  });
+}
 }
 
 
-}
+
+
