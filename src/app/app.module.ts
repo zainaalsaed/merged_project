@@ -64,6 +64,7 @@ import { TruckPage } from "../pages/truck/truck";
 import { TableeghPage } from "../pages/tableegh/tableegh";
 import { TableeghacPage } from "../pages/tableeghac/tableeghac";
 import { TestPage } from "../pages/test/test";
+<<<<<<< HEAD
  //import * as firebase from 'firebase/app';
 import { Camera  } from '@ionic-native/camera';
 import { TasweerPage } from "../pages/tasweer/tasweer";
@@ -72,6 +73,12 @@ import 'firebase/firestore';
 import { CurrentlocPage } from "../pages/currentloc/currentloc";
 import { TestatPage } from "../pages/testat/testat";
 import { TestatService } from "../services/testat-service";
+=======
+import { MenuPage } from "../pages/menu/menu";
+import { ListPage } from "../pages/list/list";
+
+
+>>>>>>> c94783f9760c2df81691299af1d414194f018cac
 
 const firebaseAuth = {
   apiKey: "AIzaSyDaMitUUxNTOo7uWpsRuhDtl4ox7cvR1FA",
@@ -102,10 +109,12 @@ const firebaseAuth = {
     TruckPage,
     jerusalemschoolsPage,
     CheckoutTripPage,
+    MenuPage,
     HomePage,
     EduPage,
     PrivatePage,
     LoginPage,
+    ListPage,
     LocalWeatherPage,
     NotificationsPage,
     RegisterPage,
@@ -175,6 +184,8 @@ const firebaseAuth = {
     qalqilyaschoolsPage,
     RegisterPage,
     PrivatePage,
+    MenuPage,
+    ListPage,
     SearchLocationPage,
     TripDetailPage,
     JerichoschoolsPage,

@@ -8,6 +8,8 @@ import {SettingsPage} from "../settings/settings";
 import { TripDetailPage } from '../trip-detail/trip-detail';
 import { CheckoutTripPage } from '../checkout-trip/checkout-trip';
 import { TestPage } from '../test/test';
+import { MenuPage } from '../menu/menu';
+import { ListPage } from '../list/list';
 
 /**
  * Generated class for the DriverPage page.
@@ -66,7 +68,7 @@ testo(){
 }
 ytesto(){
 
-  this.navCtrl.push(CheckoutTripPage);
+  this.navCtrl.push(ListPage);
 }
 memetete(){
   this.navCtrl.push(TestPage);
