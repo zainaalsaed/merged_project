@@ -35,7 +35,7 @@
     <p text-right ion-text color="secondary" tappable (click)="forgotPass()"><strong>Forgot Password?</strong></p>
 
     <div>
-      <button ion-button icon-start block color="dark" (click)="regEm()" class="submit-btn">
+      <button ion-button icon-start block color="dark" (click)="regEm()" class="submit-btn" *ngIf="!loggedin">
         <ion-icon name="log-in"></ion-icon>
         SIGN IN
       </button>
@@ -52,17 +52,17 @@
       <ion-grid>
         <ion-row>
           <ion-col col-4>
-            <button ion-button icon-only block class="btn-facebook" (click)="signInWithFacebook()">
+            <button ion-button icon-only block class="btn-facebook" (click)="signInWithFacebook()" *ngIf="!loggedin">
               <ion-icon name="logo-facebook"></ion-icon>
             </button>
           </ion-col>
           <ion-col col-4>
-            <button ion-button icon-only block class="btn-twitter">
+            <button ion-button icon-only block class="btn-twitter" *ngIf="!loggedin">
               <ion-icon name="logo-twitter"></ion-icon>
             </button>
           </ion-col>
           <ion-col col-4>
-            <button ion-button icon-only block class="btn-gplus" (click)="signInWithgoogle()">
+            <button ion-button icon-only block class="btn-gplus" (click)="signInWithgoogle()" *ngIf="!loggedin">
               <ion-icon name="logo-googleplus"></ion-icon>
             </button>
           </ion-col>

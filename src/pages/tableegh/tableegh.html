@@ -102,15 +102,25 @@
 <input type="hidden" id="queryTypens_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" name="queryType" value="platNum" tabindex="0">	   
   <div class="n"><input type="text" [(ngModel)]="description" size="80" value=""   id="platNumns_Z7_N90A19O0KG7Q20AHLB5E9P4PP6_" class="form-control input-xs enText" tabindex="0"> 
   </div>
+  <div class="col-xs-12 col-sm-6 col-md-6  ptl  ">
+    <button ion-button color="secondary" block (click)="giveaPhotofunc()">Provide a photo for the accident from gallery </button>
+
+
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6  ptl  ">
+  <button ion-button color="secondary" block (click)="giveaPhotocam()">Provide a photo for the accident from camera </button>
+
+
+</div>
 </div>					
 <div class="row">
   <div class="col-xs-12 text-center">
       <div class="row">
            <div class="col-xs-12 col-sm-6 col-md-6  ptl  ">
-             <button type="submit" id="submitBtnplatNum" class="button btnPadExt btn-block btn-md" tappable (click)=" createTableegh(platNum,platType,description)"> Submit</button>
+             <button type="submit" id="submitBtnplatNum" class="buttonoo btnPadExt btn-block btn-md" tappable (click)=" createTableegh(platNum,platType,description)"> Submit</button>
           </div>
            <div class="col-xs-12 col-sm-6 col-md-6  ptl  ">
-                <button type="reset" id="resetBtnplatNum" class="button btnPadExt btn-block btn-md">Reset </button>
+                <button type="reset" id="resetBtnplatNum" class="buttonoo btnPadExt btn-block btn-md">Reset </button>
             
             </div>
       </div>

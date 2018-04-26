@@ -23,6 +23,7 @@ import { ComplainsPage } from '../complains/complains';
 import { TrackPage } from '../track/track';
 import { ViolationsPage } from '../violations/violations';
 import { SchoolmapPage } from '../schoolmap/schoolmap';
+import { TestatPage } from '../testat/testat';
 
 
 
@@ -81,5 +82,7 @@ this.navCtrl.push(LocalWeatherPage);
 
     this.navCtrl.push(SchoolmapPage);
   }
-
+  showTestat(){
+    this.navCtrl.push(TestatPage);
+  }
 }

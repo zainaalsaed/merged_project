@@ -58,7 +58,7 @@ export class MyApp {
       //*** Control Status Bar
       this.statusBar.styleDefault();
       this.statusBar.overlaysWebView(false);
-
+      this.splashScreen.show();
       //*** Control Keyboard
       this.keyboard.disableScroll(true);
     });

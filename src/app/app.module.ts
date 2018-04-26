@@ -64,8 +64,14 @@ import { TruckPage } from "../pages/truck/truck";
 import { TableeghPage } from "../pages/tableegh/tableegh";
 import { TableeghacPage } from "../pages/tableeghac/tableeghac";
 import { TestPage } from "../pages/test/test";
-
-
+ //import * as firebase from 'firebase/app';
+import { Camera  } from '@ionic-native/camera';
+import { TasweerPage } from "../pages/tasweer/tasweer";
+import * as firebase from 'firebase'
+import 'firebase/firestore';
+import { CurrentlocPage } from "../pages/currentloc/currentloc";
+import { TestatPage } from "../pages/testat/testat";
+import { TestatService } from "../services/testat-service";
 
 const firebaseAuth = {
   apiKey: "AIzaSyDaMitUUxNTOo7uWpsRuhDtl4ox7cvR1FA",
@@ -74,7 +80,14 @@ const firebaseAuth = {
   projectId: "test-project-ca0ec",
   storageBucket: "",
   messagingSenderId: "778431294120"
+  
 };
+//export default !firebase.apps.length ? firebase.initializeApp(firebaseAuth) : firebase.app();
+// if (!firebase.apps.length) {
+//   firebase.initializeApp({});
+// }
+
+
 // import services
 // end import services
 // end import services
@@ -126,7 +139,10 @@ const firebaseAuth = {
     SchoolmapPage,
     TableeghPage,
     TableeghacPage,
-    TestPage
+    TestPage,
+    TasweerPage,
+    CurrentlocPage,
+    TestatPage
     //TestPage
   ],
   imports: [
@@ -190,7 +206,10 @@ const firebaseAuth = {
     SchoolmapPage,
     TableeghPage,
     TableeghacPage,
-    TestPage
+    TestPage,
+    TasweerPage,
+    CurrentlocPage,
+    TestatPage
     //TestPage
   ],
   providers: [
@@ -202,8 +221,10 @@ const firebaseAuth = {
     Keyboard,
     ActivityService,
     TripService,
+    TestatService,
     WeatherProvider,
-    MyProvider
+    MyProvider,
+    Camera
   ]
 })
 

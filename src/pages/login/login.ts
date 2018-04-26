@@ -4,7 +4,7 @@ import {RegisterPage} from "../register/register";
 import { Component ,ViewChild   } from '@angular/core';
 import {NewsPage} from "../news/news";
 import { AngularFireAuth } from 'angularfire2/auth';
-import * as firebase from 'firebase/app';
+import firebase from 'firebase';
 import { FirebaseError } from '@firebase/util';
 import { BarcodeScanner,BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
 import { User } from '@firebase/auth-types';
@@ -19,7 +19,7 @@ import { TrackPage } from "../track/track";
   templateUrl: 'login.html'
 })
 export class LoginPage {
-
+  loggedin= false;
   data={ };
   encodemyData:string;
 encodedData:{};
@@ -65,6 +65,8 @@ encodedData:{};
       console.log('got some data', this.fire.auth.currentUser);
       this.alert('Success! You\'re logged in');
       this.navCtrl.setRoot(DriverPage);
+      this.loggedin=true;
+
       // user is logged in
     })
     .catch( error => {
@@ -115,9 +117,12 @@ encodedData:{};
   }
   signInWithFacebook() {
     this.afAuth.auth .signInWithPopup(new firebase.auth.FacebookAuthProvider()) .then(res => console.log(res));
+  this.loggedin=true;
   }
   signInWithgoogle() {
     this.afAuth.auth .signInWithPopup(new firebase.auth.GoogleAuthProvider()) .then(res => console.log(res));
+    this.loggedin=true;
+
   }
   regUser() {
     this.navCtrl.push(RegisterPage);
@@ -148,6 +153,8 @@ this.navCtrl.popToRoot();
       console.log(barcodeData);
       this.data = barcodeData;
 this.navCtrl.push(HomePage);
+this.loggedin=true;
+
 
      }, (err) => {
          // An error occurred
